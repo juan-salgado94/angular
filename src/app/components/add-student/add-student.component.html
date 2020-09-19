@@ -10,7 +10,7 @@
     <!-- Left block -->
     <mat-card>
       <div class="controlers-wrapper">
-        <!-- Name -->
+        <!-- Nombre -->
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Student name" formControlName="student_name">
           <mat-error *ngIf="handleError('student_name', 'required')">
@@ -18,7 +18,7 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- Email -->
+        <!-- Correo -->
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Student email" formControlName="student_email">
           <mat-error *ngIf="handleError('student_email', 'required')">
@@ -26,7 +26,7 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- Section -->
+        <!-- Sector -->
         <mat-form-field>
           <mat-label>Section</mat-label>
           <mat-select [(value)]="selected" formControlName="section">
@@ -60,7 +60,7 @@
           </i>
         </mat-form-field>
 
-        <!-- Date of birth -->
+        <!-- Fecha nacimiento -->
         <mat-form-field>
           <input matInput readonly [matDatepicker]="picker" placeholder="Date of birth" formControlName="dob"
             (dateChange)="formatDate($event)">
@@ -71,7 +71,7 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- Gender -->
+        <!-- Genero -->
         <div class="misc-bottom-padding">
           <mat-label>Gender:</mat-label>
           <mat-radio-group aria-label="Select an option" formControlName="gender">
