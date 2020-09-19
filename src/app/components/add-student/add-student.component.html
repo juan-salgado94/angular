@@ -12,17 +12,17 @@
       <div class="controlers-wrapper">
         <!-- Nombre -->
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Student name" formControlName="student_name">
+          <input matInput placeholder="Nombre Estudiante" formControlName="student_name">
           <mat-error *ngIf="handleError('student_name', 'required')">
-            You must provide a<strong>student name</strong>
+            You must provide a<strong>nombre estudiante</strong>
           </mat-error>
         </mat-form-field>
 
         <!-- Correo -->
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Student email" formControlName="student_email">
+          <input matInput placeholder="Correo Estudiante" formControlName="student_email">
           <mat-error *ngIf="handleError('student_email', 'required')">
-            You must provide a<strong>student email</strong>
+            You must provide a<strong>correo estudiante</strong>
           </mat-error>
         </mat-form-field>
 
@@ -73,7 +73,7 @@
 
         <!-- Genero -->
         <div class="misc-bottom-padding">
-          <mat-label>Gender:</mat-label>
+          <mat-label>Genero:</mat-label>
           <mat-radio-group aria-label="Select an option" formControlName="gender">
             <mat-radio-button value="Male">Male</mat-radio-button>
             <mat-radio-button value="Female">Female</mat-radio-button>
